@@ -1,9 +1,7 @@
 import { CreateProfileDto } from 'src/dto/create-profile.dto';
 import { UpdateProfileDto } from 'src/dto/update-profile.dto';
-import { ProfilesService } from './profiles.service';
-export declare class ProfilesController {
-    private readonly profilesService;
-    constructor(profilesService: ProfilesService);
+export declare class ProfilesService {
+    private profiles;
     findAll(): {
         id: `${string}-${string}-${string}-${string}-${string}`;
         name: string;
