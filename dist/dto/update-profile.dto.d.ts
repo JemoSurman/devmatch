@@ -1,4 +1,4 @@
 export declare class UpdateProfileDto {
-    name: string;
-    description: string;
+    readonly name: string;
+    readonly description: string;
 }

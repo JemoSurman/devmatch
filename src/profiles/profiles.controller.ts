@@ -1,5 +1,5 @@
 import { Controller, Get, Query, Param, Post, Body, Put, Delete, HttpCode,
-    HttpStatus, ParseUUIDPipe, } from '@nestjs/common';
+    HttpStatus, ParseUUIDPipe,ValidationPipe, } from '@nestjs/common';
 import { CreateProfileDto } from 'src/dto/create-profile.dto';
 import { UpdateProfileDto } from 'src/dto/update-profile.dto';
 import { ProfilesService } from './profiles.service';
