@@ -33,7 +33,7 @@ let ProfilesService = class ProfilesService {
     findOne(id) {
         let matchingProfile = this.profiles.find((profile) => profile.id === id);
         if (!matchingProfile) {
-            throw new common_1.NotFoundException(`Profile with ID ${id} not found.`);
+            throw new Error(`Profile with ID ${id} not found.`);
         }
         return matchingProfile;
     }
